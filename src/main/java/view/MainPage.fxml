@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="648.0" prefWidth="1202.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainPageController">
+    <children>
+        <AnchorPane layoutX="1.0" layoutY="2.0" prefHeight="77.0" prefWidth="1202.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <children>
+                <Text layoutY="37.41650390625" strokeType="OUTSIDE" strokeWidth="0.0" text="BATTLE SHIP" wrappingWidth="119.79443359375" AnchorPane.leftAnchor="5.0">
+                    <font>
+                        <Font name="Open Sans ExtraBold Italic" size="23.0" />
+                    </font>
+                </Text>
+                <ImageView fitHeight="63.0" fitWidth="140.0" layoutX="125.0" layoutY="13.0" AnchorPane.leftAnchor="125.0">
+                    <image>
+                        <Image url="@images/battle_ship.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="usernameLbl" layoutX="1051.0" layoutY="30.0" text="username" AnchorPane.rightAnchor="150.0" />
+                <Label fx:id="scoreLbl" alignment="CENTER" layoutX="1051.0" layoutY="56.0" text="score" AnchorPane.rightAnchor="172.0" />
+                <ImageView fitHeight="76.0" fitWidth="35.0" layoutX="1166.0" AnchorPane.rightAnchor="10.0">
+                    <image>
+                        <Image url="@images/soldier%20(4).png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <VBox fx:id="myFieldVbox" layoutX="131.0" layoutY="184.0" prefHeight="200.0" prefWidth="${myFieldVbox.height}" AnchorPane.bottomAnchor="176.0" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="134.0" />
+        <VBox fx:id="enemyFieldVbox" layoutX="920.0" layoutY="165.0" prefHeight="200.0" prefWidth="${enemyFieldVbox.height}" AnchorPane.bottomAnchor="176.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="134.0" />
+      <AnchorPane layoutX="-1.0" layoutY="558.0" prefHeight="90.0" prefWidth="1202.0" AnchorPane.bottomAnchor="0.0">
+         <children>
+            <Button fx:id="randomBtn" layoutX="39.0" layoutY="33.0" mnemonicParsing="false" prefWidth="120.0" text="Random" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="50.0" />
+            <Button fx:id="gameStartBtn" layoutX="174.0" layoutY="27.0" mnemonicParsing="false" prefWidth="120.0" text="Start The Game" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="200.0" />
+            <Button fx:id="exitBtn" layoutX="252.0" layoutY="51.0" mnemonicParsing="false" prefWidth="120.0" text="Exit" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="350.0" />
+            <Button fx:id="pauseBtn" layoutX="481.0" layoutY="33.0" mnemonicParsing="false" prefWidth="120.0" text="Pause" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="500.0" />
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

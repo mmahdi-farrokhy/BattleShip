@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:controller="controller.RegisterPageController" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="388.0" prefWidth="271.0" spacing="15.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="BATTLE SHIP">
+         <font>
+            <Font name="Open Sans ExtraBold" size="38.0" />
+         </font>
+      </Text>
+      <Text layoutX="31.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register a battle ship user">
+         <font>
+            <Font name="Open Sans ExtraBold" size="17.0" />
+         </font>
+      </Text>
+      <Label fx:id="errorLbl" alignment="CENTER" text="Error!" textFill="#cd0000" />
+      <TextField fx:id="usernameField" minWidth="100.0" prefHeight="25.0" prefWidth="100.0" promptText="Username" />
+      <TextField fx:id="firstnameField" layoutX="10.0" layoutY="259.0" promptText="First Name" />
+      <TextField fx:id="lastnameField" layoutX="10.0" layoutY="272.0" promptText="Last Name" />
+      <PasswordField fx:id="passwordField" promptText="Password" />
+      <PasswordField fx:id="confirmPasswordField" layoutX="10.0" layoutY="164.0" promptText="Confirm Password" />
+      <HBox alignment="CENTER" spacing="30.0">
+         <children>
+            <Button fx:id="cancelBtn" mnemonicParsing="false" prefWidth="100.0" text="Cancel" />
+            <Button fx:id="registerBtn" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Register" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+   </padding>
+</VBox>
